@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAF3E0;
+}
+
+.menu {
+    padding: 40px;
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nome-loja {
+    font-size: 1.5rem;
+    color:  #6F4E37;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #D4A373;
+}
+
+.hero {
+    width: 80%;
+    padding: 120px 60px;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+
+    background-color:  #6F4E37;
+
+    border-radius: 20px;
+}
+
+.hero h1 {
+    color: #FFFFFF;
+    font-size: 2.2rem;
+}
+
+.descricao-hero {
+    color: #FAF3E0;
+
+    padding: 20px;
+    font-size: 1.3rem;
+
+    margin-bottom: 20px;
+}
+
+.botao-hero {
+    width: 200px;
+    padding: 20px;
+
+    margin-top: 20px;
+
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 8px ;
+
+    background-color: #D4A373;
+    color: #2B2B2B;
+
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botao-hero:hover {
+    background-color: #6F4E37;
+    color: #FFFFFF;
+}
+
+.cardapio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.9rem;
+    color: #6F4E37;
+}
+
+.container-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.produtos {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.produtos:hover {
+    transform: translateY(-5px);
+}
+
+.produtos img {
+    width: 100%;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px black ;
+}
+
+h3 {
+    padding-top: 8px;
+}
+
+.descricao-produto {
+    font-size: 1.0rem;
+    margin-top: 20px;
+}
+
+.preco {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.botao-cardapio {
+    width: 200px;
+    padding: 12px;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    background-color:#D4A373;
+    color: #2B2B2B;
+}
+
+.botao-cardapio:hover {
+    background-color: #6F4E37;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.sobre-nos  {
+    width: 70%;
+    margin: 120px auto;
+    text-align: justify;
+}
+
+.sobre-nos h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #6F4E37;
+
+    margin-bottom: 20px;
+}
+
+.sobre-nos p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.contato {
+    text-align: center;
+}
+
+.contato h2 {
+    margin-bottom: 20px;
+    color: #6F4E37;
+}
+
+.contato .informacoes-contatos {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.redes-sociais {
+    width: 70%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.redes-sociais a {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+    color: #6F4E37;
+
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: black;
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .nome-loja {
+        font-size: 1.2rem;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+
+    .hero {
+        width: 80%;
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .descricao-hero {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .container-produtos {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .produtos {
+        width: 250px;
+    }
+
+    .container-produtos h3 {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+    
+    .menu {
+        padding: 13px;
+    }
+
+    .menu p {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        font-size: 15px;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 30px 30px;
+    }
+
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+
+    .hero .descricao-hero {
+        font-size: 1.1rem;
+    }
+
+    .botao-hero {
+        padding: 12px;
+    }
+
+}
